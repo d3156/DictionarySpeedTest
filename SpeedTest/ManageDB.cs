@@ -69,7 +69,7 @@ namespace ComputerComponents
             }
 
             string res = ";Скорость поиска по таблице;Скорость поиска по таблице со словарем\n"; ;
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 100001; i++)
             {
                 SqlCommand cmd = new SqlCommand($"INSERT TableMain(id,v1,v2,v3,v4,v5) VALUES ({i}, '{RandomString(190)}', '{RandomString(190)}', '{RandomString(190)}', '{RandomString(190)}', '{dictioanry[i % 10]}')", speed1);
                 cmd.ExecuteNonQuery();
